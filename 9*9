@@ -1,0 +1,13 @@
+package main
+import "fmt"
+func main (){
+    for y :=1;y<=9;y++{
+		for x:=2;x<=9;x++{    //當Y等於1跑這個迴圈
+		    fmt.Print(x,"*",y,"=",x*y,"\t")
+	    if x==9 {             //當X等於9印出空白
+		    fmt.Println(" ")
+		}
+	   }	
+	}
+
+}
