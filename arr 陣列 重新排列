@@ -1,0 +1,28 @@
+package main
+import "fmt"
+
+func main(){
+	arr :=[4]int{18,15,10,1}
+	fmt.Println(arr)
+     
+	for x:=0;x<len(arr)-1;x++{ //陣列幾 檢查陣列-1次
+
+		for y:=0;y<len(arr)-1;y++{//每次檢查都從陣列0開始
+			
+		if arr[y]>arr[y+1]{
+				
+			a:=arr[y]
+			arr[y]=arr[y+1]
+			arr[y+1]=a
+					
+					//檢查到 就換資料 然後繼續檢查  直到最外圍迴圈跑完
+			}
+		}
+	
+		}
+		fmt.Println(arr)
+
+	}
+	//一個一個去發現 並把他往前換
+
+	
