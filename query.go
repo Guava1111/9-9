@@ -2,22 +2,17 @@ package main
 import "fmt"
 
 func arr (x []int,a []int){
-	fmt.Println(x,a)
-	for t:=0;t<=len(x)-1;t++{
-		for e:=0;e<=len(a)-1;e++{
-			if x[t]==a[e]{
-			fmt.Println("是")
-			fmt.Println("相同數:",x[t])
-		} else {
-			
-		}
-	}
 
-}
-}
+	for t:=0;t<=len(x)-1;t++{
+	    var ans bool=x[t]==a[0]
+         fmt.Println (ans)
+	}
+	
+	}
 func main(){
 var y[]int=[]int{1,2,3,4,5}
-var z[]int=[]int{2,5,10}
+var z[]int=[]int{3}
 arr(y,z)
 
 }
+
